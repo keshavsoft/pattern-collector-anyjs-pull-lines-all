@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dependency Explorer | pattern-collector-anyjs-pull-lines</title>
+   <title>Dependency Explorer | pattern-collector-anyjs-pull-lines-all</title>
    
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -447,8 +447,8 @@
                <!-- Level 0: Root -->
                <div class="tree-level">
                   <div class="node-card root-node selected" id="node-root" onclick="selectPackage('root')">
-                     <div class="node-title">pattern-collector-anyjs-pull-lines-import</div>
-                     <span class="node-version">v1.9.2</span>
+                     <div class="node-title">pattern-collector-anyjs-pull-lines-all</div>
+                     <span class="node-version">v1.2.1</span>
                   </div>
                </div>
 
@@ -485,8 +485,8 @@
          <!-- Right Side: Details Card -->
          <div class="detail-card">
             <div class="detail-header">
-               <div class="detail-name" id="detail-name">pattern-collector-anyjs-pull-lines-import</div>
-               <div class="detail-desc" id="detail-desc">Scans target source files to locate route module import declarations and their original file paths.</div>
+               <div class="detail-name" id="detail-name">pattern-collector-anyjs-pull-lines-all</div>
+               <div class="detail-desc" id="detail-desc">A simple, zero-dependency ES module to split file content into lines and track their 1-indexed line numbers.</div>
                <div class="detail-tags" id="detail-tags">
                   <span class="tag">pattern</span>
                   <span class="tag">regex</span>
@@ -498,7 +498,7 @@
             <div class="meta-list">
                <div class="meta-item">
                   <span class="meta-label">Version Installed</span>
-                  <span class="meta-value" id="detail-version">v1.9.2</span>
+                  <span class="meta-value" id="detail-version">v1.2.1</span>
                </div>
 
                <div class="meta-item">
@@ -508,20 +508,20 @@
 
                <div class="meta-item">
                   <span class="meta-label">Package Entry Point</span>
-                  <span class="meta-value" style="font-family: 'Fira Code', monospace;" id="detail-entry">import pullLinesImport from 'pattern-collector-anyjs-pull-lines-import'</span>
+                  <span class="meta-value" style="font-family: 'Fira Code', monospace;" id="detail-entry">import pullLinesAll from 'pattern-collector-anyjs-pull-lines-all'</span>
                </div>
 
                <div class="meta-item">
                   <span class="meta-label">GitHub Repository</span>
                   <span class="meta-value" id="detail-repo">
-                     <a href="https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines-import" target="_blank" id="detail-repo-link">github.com/keshavsoft/pattern-collector-anyjs-pull-lines-import</a>
+                     <a href="https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines-all" target="_blank" id="detail-repo-link">github.com/keshavsoft/pattern-collector-anyjs-pull-lines-all</a>
                   </span>
                </div>
 
                <div class="meta-item">
                   <span class="meta-label">How to Install</span>
                   <div class="code-box">
-                     <span id="detail-install">npm install pattern-collector-anyjs-pull-lines-import</span>
+                     <span id="detail-install">npm install pattern-collector-anyjs-pull-lines-all</span>
                   </div>
                </div>
             </div>
@@ -536,15 +536,15 @@
    <script>
       const packageDb = {
          'root': {
-            name: 'pattern-collector-anyjs-pull-lines-import',
-            version: 'v1.9.2',
-            desc: 'Scans target source files to locate route module import declarations and their original file paths.',
+            name: 'pattern-collector-anyjs-pull-lines-all',
+            version: 'v1.2.1',
+            desc: 'A simple, zero-dependency ES module to split file content into lines and track their 1-indexed line numbers.',
             tags: ['pattern', 'regex', 'parser', 'import', 'analyzer', 'esm', 'extractor'],
             scope: 'Root Project (This Repository)',
-            entry: 'import pullLinesImport from \'pattern-collector-anyjs-pull-lines-import\'',
-            repo: 'https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines-import',
-            repoName: 'github.com/keshavsoft/pattern-collector-anyjs-pull-lines-import',
-            install: 'npm install pattern-collector-anyjs-pull-lines-import',
+            entry: 'import pullLinesAll from \'pattern-collector-anyjs-pull-lines-all\'',
+            repo: 'https://github.com/keshavsoft/pattern-collector-anyjs-pull-lines-all',
+            repoName: 'github.com/keshavsoft/pattern-collector-anyjs-pull-lines-all',
+            install: 'npm install pattern-collector-anyjs-pull-lines-all',
             connections: ['extract']
          },
          'extract': {

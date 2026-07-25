@@ -21,17 +21,18 @@ const totalLinesStory = (allLines) => {
 const startFunc = ({ fileContent, showLog = false }) => {
 
     if (showLog?.keysOnly) console.log(`${packageJson.name}-start`);
-    if (showLog?.withValues) console.log(`${packageJson.name}-inputs : `, fileContent, parseRegex, searchRegex);
+    if (showLog?.withValues) console.log(`${packageJson.name}-inputs : `, fileContent);
 
     const allLines = totalLines({ fileContent });
 
     const allLinesStory = totalLinesStory(allLines);
 
     if (showLog?.keysOnly) console.log(`${packageJson.name}-end`);
-    if (showLog?.withValues) console.log(`${packageJson.name}-outputs : `, importLines);
+    if (showLog?.withValues) console.log(`${packageJson.name}-outputs : `, allLines, allLinesStory);
 
     return {
-        allLines
+        allLines,
+        allLinesStory
     };
 };
 
